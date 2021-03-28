@@ -5,7 +5,7 @@
   "type": "module",
   "main": "server.mjs",
   "scripts": {
-    "start": "nodemon"
+    "start": "node server.mjs"
   },
   "keywords": [],
   "author": "",
@@ -19,5 +19,8 @@
     "express": "^4.17.1",
     "knex": "^0.95.1",
     "pg": "^8.5.1"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
