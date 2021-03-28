@@ -4,16 +4,14 @@ import bcrypt from 'bcrypt'
 import cors from 'cors'
 
 const app = express()
-const port = 3001
+const port = process.env.PORT
 const saltRounds = 10;
 
 const db = knex({
     client: 'pg',
     connection: {
-      host : '127.0.0.1',
-      user : 'postgres',
-      password : 'reborn',
-      database : 'optilearn'
+      connectionString: 'postgresql-lively-23876',
+      ssl: true
     }
 })
 
